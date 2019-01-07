@@ -29,8 +29,12 @@ public class BootView extends Region {
         this.model = model;
         //this.model1 = model1;
         Rectangle boot = new Rectangle(30,(30 * model1.getSize()),Color.GRAY);
+        //1 vakje x aantal vakjes lengte(30 vervangen)
         if(model.isGeraakt()){
-        boot.setFill(Color.RED);
+        Rectangle hit = new Rectangle(e.getColumn, e.getRow, 30, 30);
+        //e is mouse-event en 30 moet vervangen door dikte vakje
+        hit.setFill(Color.RED);
+        //geraakte vakje wordt rood
         Text raak = new Text(10,20,"X");
         getChildren().addAll(boot);
         }
