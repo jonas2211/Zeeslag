@@ -20,16 +20,15 @@ public class Zeeslag2Main extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Bord model = new Bord(10);
         
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("FXMLZeeslag2View.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
         
-        FXMLLoader lader = new FXMLLoader(getClass().getResource("FXMLZeeslag2View.fxml"));
-        Parent root = lader.load();
-        FXMLZeeslag2ViewController controller = lader.getController();
+        Vakje model = new Vakje();
+        FXMLZeeslag2ViewController controller = loader.getController();
         
         controller.setModel(model);
-        
-        Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
