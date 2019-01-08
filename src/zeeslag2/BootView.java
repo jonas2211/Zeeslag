@@ -25,7 +25,7 @@ public class BootView extends Region {
    // private Boot model1;
     private Rectangle rechthoek;
     
-    public BootView(Vakje model, Boot model1) {
+    public BootView(Vakje model) {
         this.model = model;
         //this.model1 = model1;
         Rectangle boot = new Rectangle(30,(30 * model1.getSize()),Color.GRAY);
