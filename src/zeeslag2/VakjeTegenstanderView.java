@@ -34,10 +34,19 @@ public VakjeTegenstanderView(Vakje model) {
     }
 }
 
-    public int getPositieMuis(double x, double y) {
+    /*public int getPositieMuis(double x, double y) {
         int kolom = (int) (x/30);
         int rij = (int) (y/30);
         return rij*10 + kolom;
+    }*/
+//getters
+    public int getColumn(int x){
+        return x/70;//70 veranderen door dikte vakje
+    }
+
+    public int getRow(int y){
+        return y/70;//70 veranderen door dikte vakje
+    
     }
     
     
