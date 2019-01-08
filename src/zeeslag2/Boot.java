@@ -65,9 +65,4 @@ public class Boot {
             levens --;
     }
     
-    public void test(){
-        return test;
-    }
-    
-    
 }

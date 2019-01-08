@@ -5,9 +5,6 @@
  */
 package Zeeslag2;
 
-private FXMLZeeslag2ViewController model;
-//waarom is dit?
-
 import javafx.scene.layout.Region;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle; 

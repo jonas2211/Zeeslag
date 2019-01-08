@@ -40,11 +40,13 @@ public class FXMLZeeslag2ViewController {
     private VakjeSpelerView view;
     private VakjeTegenstanderView view2;
     
+    /*
     public void update(){
         view.update();
         view2.update();
     }
-    
+    */
+    /*
     public void selecteerVakje(MouseEvent e){
         System.out.println(e.getX() + "-" + e.getY());
         int pos = view2.getPositieMuis(e.getX(), e.getY());
@@ -55,4 +57,5 @@ public class FXMLZeeslag2ViewController {
         
         update();
     }
+*/
 }
