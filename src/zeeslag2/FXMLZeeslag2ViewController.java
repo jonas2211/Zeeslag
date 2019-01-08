@@ -58,4 +58,20 @@ public class FXMLZeeslag2ViewController {
         update();
     }
 */
+   
+    
+    
+    //mogelijk begin controller
+    
+    
+    public void setModel(VakjeTegenstanderView view2) {
+        this.view2 = view2;
+        view2 = new VakjeTegenstanderView(view2);
+
+    
+    public void selecteerVakje(MouseEvent e){
+        int x = (int) e.getX();
+        int y = (int) e.getY();
+        System.out.println(view2.getColumn(x) + "-" + view2.getRow(y));
+    }
 }
