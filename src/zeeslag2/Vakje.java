@@ -15,6 +15,7 @@ public class Vakje {
     private boolean gemist;
     private boolean raak;
     private boolean mis;
+    private int coordinaat;
     
     
     public Vakje() {

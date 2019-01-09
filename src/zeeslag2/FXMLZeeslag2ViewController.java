@@ -39,10 +39,10 @@ public class FXMLZeeslag2ViewController {
         assert lbl1 != null : "fx:id=\"lbl1\" was not injected: check your FXML file 'FXMLZeeslagView.fxml'.";
         
     }
-    }
+    
     private Vakje model;
     private VakjeSpelerView view;
-    private VakjeTegenstanderView view2;
+    private VakjeTegenstanderView model2;
     
     /*
     om figuur op te roepen
@@ -71,52 +71,37 @@ public class FXMLZeeslag2ViewController {
         update();
     }
 */
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
    
     
     
     //mogelijk begin controller
     
-    
-    public void setModel(VakjeTegenstanderView view2) {
-        this.view2 = view2;
-        view2 = new VakjeTegenstanderView(view2);
-
+    public void setModel(VakjeTegenstanderView model2) {
+    this.model2 = model2;
+    model2 = new VakjeTegenstanderView(model);
+    }
    
     public void selecteerVakje(MouseEvent e){
         int x = (int) e.getX();
         int y = (int) e.getY();
-        System.out.println(view2.getColumn(x) + "-" + view2.getRow(y));
+        System.out.println(model2.getColumn(x) + "-" + model2.getRow(y));
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-        }
-=======
->>>>>>> 8fdaa76e8a5935f0de6576ef74977c62ac90a299
-=======
->>>>>>> 8fdaa76e8a5935f0de6576ef74977c62ac90a299
-=======
-    
-        public void selecteerVakje(MouseEvent e){
-        double x = e.getX();
-        double y = e.getY();
-        System.out.println(e.getX() + "-" + e.getY());
-        }
->>>>>>> 9fdd96e1bee38fc25e00e91087d390498c999ea5
 }
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

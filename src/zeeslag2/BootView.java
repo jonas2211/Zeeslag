@@ -12,6 +12,7 @@ import javafx.scene.layout.Region;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle; 
 import javafx.scene.text.Text;
+
  
 
 /**
@@ -22,6 +23,7 @@ public class BootView extends Region {
     
     private Vakje model;
     private Boot model1;
+    private VakjeTegenstanderView view;
    // private Boot model1;
     private Rectangle rechthoek;
     
@@ -31,7 +33,7 @@ public class BootView extends Region {
         Rectangle boot = new Rectangle(30,(30 * model1.getSize()),Color.GRAY);
         //1 vakje x aantal vakjes lengte(30 vervangen)
         if(model.isGeraakt()){
-        Rectangle hit = new Rectangle(e.getColumn, e.getRow, 30, 30);
+        Rectangle hit = new Rectangle(VakjeTegenstanderView.getColumn, VakjeTegenstanderView.getRow, 30, 30);
         //e is mouse-event en 30 moet vervangen door dikte vakje
         hit.setFill(Color.RED);
         //geraakte vakje wordt rood
