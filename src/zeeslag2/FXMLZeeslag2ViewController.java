@@ -45,6 +45,15 @@ public class FXMLZeeslag2ViewController {
     private VakjeTegenstanderView view2;
     
     /*
+    om figuur op te roepen
+        public void setModel(Hnefatafl hnefataflModel) {
+        this.hnefataflModel = hnefataflModel;
+        hnefataflView = new HnefataflView(hnefataflModel);
+        gamePane.getChildren().add(hnefataflView);
+        gamePane.setFocusTraversable(true);
+    */ 
+    
+    /*
     public void update(){
         view.update();
         view2.update();
@@ -62,6 +71,7 @@ public class FXMLZeeslag2ViewController {
         update();
     }
 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
    
@@ -101,4 +111,12 @@ public class FXMLZeeslag2ViewController {
 >>>>>>> 8fdaa76e8a5935f0de6576ef74977c62ac90a299
 =======
 >>>>>>> 8fdaa76e8a5935f0de6576ef74977c62ac90a299
+=======
+    
+        public void selecteerVakje(MouseEvent e){
+        double x = e.getX();
+        double y = e.getY();
+        System.out.println(e.getX() + "-" + e.getY());
+        }
+>>>>>>> 9fdd96e1bee38fc25e00e91087d390498c999ea5
 }
