@@ -8,8 +8,7 @@ import Zeeslag2.Variabelen;
 import java.awt.Point;
 
 public class Positie {
-    private Point from;
-    private Point to;
+    private int x,y;
 
 
 /**
@@ -69,6 +68,7 @@ public Positie(Point from, Point to) {
     }*/
 
     //getters
+    /*
     public int getColumn(int x){
         return x/70;//70 veranderen door dikte vakje
     }
@@ -77,4 +77,5 @@ public Positie(Point from, Point to) {
         return y/70;//70 veranderen door dikte vakje
     
     }
+*/
 }

@@ -15,13 +15,26 @@ public class Boot {
     private int levens;
     private boolean gezonken;
     private Positie positie;
+    private int x,y;
+    private String Boot2,Boot3,Boot4,Boot5;
+    private boolean isHor; 
 
    
-    public Boot(String naam, int size) {
+    public Boot(String naam, int size, int x, int y, boolean isHor) {
         this.naam = naam;
         this.size = size;
         this.gezonken = false;
         this.levens = size;
+        this.x = x;
+        this.y = y;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
     }
 
     public String getNaam() {
@@ -64,5 +77,6 @@ public class Boot {
         else 
             levens --;
     }
+    
     
 }
