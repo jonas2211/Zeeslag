@@ -38,5 +38,7 @@ public class BootView extends Region {
         Text raak = new Text(10,20,"X");
         getChildren().addAll(boot);
         }
-    }   
+    }
+    
+    
 }
