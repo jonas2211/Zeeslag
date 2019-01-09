@@ -16,7 +16,14 @@ public class Positie {
  *
  * @author jonas
  */
+
     /*
+public Positie(Point from, Point to) {
+        if(from.getX() > Variabelen.spelbord || from.getX() < 0
+                || from.getY() > Variabelen.spelbord || from.getY() < 0
+                || to.getX() > Variabelen.spelbord || to.getX() < 0
+                || to.getY() > Variabelen.spelbord || to.getY() < 0) {
+            throw new ArrayIndexOutOfBoundsException();
 public Positie(Point from, Point to) {
         if(from.getX() > Variabelen.spelbord || from.getX() < 0
                 || from.getY() > Variabelen.spelbord || from.getY() < 0
@@ -57,7 +64,10 @@ public Positie(Point from, Point to) {
 
         return Math.sqrt(Math.pow(x1-x2, 2) + Math.pow(y1-y2, 2)) + 1;
     }
-*/
+
+        return Math.sqrt(Math.pow(x1-x2, 2) + Math.pow(y1-y2, 2)) + 1;
+    }*/
+
     //getters
     public int getColumn(int x){
         return x/70;//70 veranderen door dikte vakje
