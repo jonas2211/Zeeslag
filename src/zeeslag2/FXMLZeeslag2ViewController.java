@@ -27,6 +27,9 @@ public class FXMLZeeslag2ViewController {
 
     @FXML
     private TextField lbl1;
+    
+  //123
+    
 
     @FXML
     void initialize() {
@@ -35,6 +38,7 @@ public class FXMLZeeslag2ViewController {
         assert HandelButtonAction != null : "fx:id=\"HandelButtonAction\" was not injected: check your FXML file 'FXMLZeeslagView.fxml'.";
         assert lbl1 != null : "fx:id=\"lbl1\" was not injected: check your FXML file 'FXMLZeeslagView.fxml'.";
         
+    }
     }
     private Vakje model;
     private VakjeSpelerView view;
@@ -58,6 +62,8 @@ public class FXMLZeeslag2ViewController {
         update();
     }
 */
+<<<<<<< HEAD
+<<<<<<< HEAD
    
     
     
@@ -68,10 +74,31 @@ public class FXMLZeeslag2ViewController {
         this.view2 = view2;
         view2 = new VakjeTegenstanderView(view2);
 
-    
+   
     public void selecteerVakje(MouseEvent e){
         int x = (int) e.getX();
         int y = (int) e.getY();
         System.out.println(view2.getColumn(x) + "-" + view2.getRow(y));
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        }
+=======
+>>>>>>> 8fdaa76e8a5935f0de6576ef74977c62ac90a299
+=======
+>>>>>>> 8fdaa76e8a5935f0de6576ef74977c62ac90a299
 }
